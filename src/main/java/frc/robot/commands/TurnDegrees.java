@@ -49,9 +49,7 @@ public class TurnDegrees extends CommandBase {
     else {
       m_speed = m_speed + m_acceleration * 0.020;
     }
-    SmartDashboard.putNumber("m_speed", m_speed);
-    SmartDashboard.putNumber("m_maxSpeed", m_maxSpeed);
-    SmartDashboard.putNumber("m_acceleration", m_acceleration);
+
     m_drive.arcadeDrive(0, m_speed);
   }
 
